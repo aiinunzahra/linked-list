@@ -9,7 +9,7 @@ public class Main {
         list.insertAtEnd("Banu");
     
     // Print the list
-    System.out.println("Linked List after insertion:");
+    System.out.println("Lingit statusked List after insertion:");
     list.printList(); // Expeceted: Caca -> Nana -> Beni -> Banu -> null
 
     // Insert after a specific node
