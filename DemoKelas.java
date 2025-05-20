@@ -4,8 +4,8 @@ public class DemoKelas {
 
         Kelas k = new Kelas(Dewi);
 
-        Siswa dewi = new Siswa("Dewi");
-        k.tambahDiBelakang(dewi);
+        Siswa maul = new Siswa("Maul");
+        k.tambahDiBelakang(maul);
         k.tambahDiBelakang(new Siswa("Caca"));
         k.tambahDiBelakang(new Siswa ("Cila"));
         k.tambahDiBelakang(new Siswa ("Aida"));
