@@ -12,5 +12,6 @@ public class Siswa {
 
 public Siswa(String x){
     nama = x;
+    
     }
 }
