@@ -15,20 +15,20 @@ public class DemoKelas {
         System.out.println(" ");
 
         // Test ambilDi
-        System.out.println("Testing urutan:");
-        Siswa siswaAt2 = k.ambilDi(2);
-        if (siswaAt2 != null){
-            System.out.println("Siswa at index 2: " + siswaAt2.nama);
+        System.out.println("mengambil salah satu nama siswa");
+        Siswa siswaAmbilDi = k.ambilDi(2);
+        if (siswaAmbilDi != null){
+            System.out.println("Siswa yang diambil: " + siswaAmbilDi.nama);
         } else {
-            System.out.println("No siswa at index 2");
+            System.out.println("No Siswa yang diambil:");
         }
 
         System.out.println(" ");
 
        // Test urutan
-       System.out.println("Testing urutan:");
-       int indexOfCila = k.urutan("Cila");
-       System.out.println("Index of Cila: " +indexOfCila);
+       System.out.println("Urutan siswa:");
+       int urutanSiswa = k.urutan("Cila");
+       System.out.println("Urutan siswa Cila: " +urutanSiswa);
 
     //    int indexOfNonExist = k.urutan("NonExist");
     //    System.out.println("Index of NonExist: " +indexOfnonExist);
@@ -36,27 +36,26 @@ public class DemoKelas {
     System.out.println(" ");
 
        //Test jumlahSiswa
-       System.out.println("Testing jumlahSiswa:");
-       System.out.println("jumlah siswa; " + k.jumlahSiswa());
+       System.out.println("jumlah siswa: " + k.jumlahSiswa());
 
        System.out.println(" ");
 
        // Test tambahDiDepan
-       System.out.println("Testing tambahDiDepan:");
+       System.out.println("menambah siswa baru di depan:");
        k.tambahDiDepan(new Siswa("Ozan"));
        k.tampilkanSemua();
 
        System.out.println(" ");
 
        //Test tambahSetelah
-       System.out.println("Testing tambahSetelah:");
+       System.out.println("menambah siswa baru di antara siswa:");
        k.tambahSetelah("Dewi", new Siswa("Emil"));
        k.tampilkanSemua();
 
        System.out.println(" ");
 
        //Test hapus
-       System.out.println("Testing hapus:");
+       System.out.println("menghapus siswa Caca:");
        k.hapus("Caca");
        k.tampilkanSemua();
 
